@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" fill="#ddd">
+  <rect width="400" height="300" rx="16"></rect>
+  <text x="50%" y="50%" text-anchor="middle" fill="#999" font-size="20" dy=".3em">Placeholder</text>
+</svg>
