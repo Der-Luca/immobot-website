@@ -32,7 +32,7 @@ const steps = [
 
 export default function Steps() {
   return (
-    <section className="px-4 py-16 md:py-20">
+    <section className="px-4 py-16 md:py-20 bg-white">
       <div className="mx-auto max-w-7xl text-center">
         <p className="text-sm text-neutral-500">Einfach</p>
         <h2 className="text-3xl md:text-5xl font-bold mt-1">So funktioniert immobot.pro</h2>

@@ -1,80 +1,81 @@
-"use client";
+// components/home/HeroFixedLayer.jsx  (KEIN "use client" nötig)
 import Link from "next/link";
-import Image from "next/image";
-import { motion } from "framer-motion";
 
-export default function Hero() {
+export default function HeroFixedLayer({
+  imageUrl = "/shutterstock_2580032997.jpg",
+  title = "Hör auf, nach Immobilien zu suchen!",
+  subtitle = "Lass die Objekte zu dir kommen – mit Immobot.",
+  kicker = "IMMOBOT",
+  ctaPrimary,   // { label: string, href: string }
+  ctaSecondary, // { label: string, href: string }
+  children,     // optionaler Content, der NACH dem Hero steht
+}) {
   return (
-    <section className="px-4 pt-12 pb-20 md:pt-20 bg-white">
-      <div className="mx-auto max-w-7xl grid md:grid-cols-2 gap-10 items-center">
-        {/* ───── Textblock ───── */}
-        <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4 }}
-          className="bg-neutral-50 rounded-2xl p-8 md:p-10"
-        >
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-            Hör auf, nach Immobilien zu suchen!
-          </h1>
-          <p className="mt-5 text-neutral-700 text-base md:text-lg">
-            Erhalte täglich automatisch die besten Immobilienangebote aus über 40 Portalen
-            direkt in dein Postfach.
-          </p>
-
-          <div className="mt-8 flex gap-3">
-            <Link
-              href="/starten"
-              className="rounded-xl px-5 py-3 bg-blue-600 text-white text-sm font-medium hover:bg-blue-700 transition-colors"
-            >
-              Starten
-            </Link>
-            <Link
-              href="/demo"
-              className="rounded-xl px-5 py-3 bg-neutral-100 text-sm font-medium hover:bg-neutral-200 transition-colors"
-            >
-              Demo
-            </Link>
-          </div>
-        </motion.div>
-
-        {/* ───── Bild ───── */}
-        <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.45, delay: 0.1 }}
-          className="w-full h-full flex justify-center md:justify-end"
-        >
-          <div className="relative w-full aspect-[4/3] md:aspect-[5/4] rounded-2xl overflow-hidden border bg-neutral-100">
-            <Image
-              src="/placeholder.svg"
-              alt="Hero Bild – Immobilien-Suche"
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 50vw"
-              priority
-            />
-          </div>
-        </motion.div>
+    <section className="relative">
+      {/* Fester Hintergrund über die ganze Seite */}
+      <div aria-hidden className="fixed inset-0 -z-10">
+        <img
+          src={imageUrl}
+          alt=""
+          className="h-full w-full object-cover"
+          draggable={false}
+        />
+        {/* dunkles Overlay für Lesbarkeit */}
+        <div className="absolute inset-0 bg-black/50" />
+        {/* dezenter Verlauf nach unten, damit der Folgecontent weich startet */}
+        <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-black/60 to-transparent" />
       </div>
 
-      {/* ───── Logos ───── */}
-      <div className="mt-12 md:mt-16 text-center">
-        <p className="text-sm md:text-base text-neutral-600 mb-6">
-          Wir suchen für dich nach deiner perfekten Immobilie, auf 40+ Plattformen mit tausenden Inseraten, z. B.
-        </p>
-        <div className="flex flex-wrap justify-center gap-6 md:gap-10 items-center">
-          {["immo-scout24", "immowelt", "sz", "sparkasse", "kleinanzeigen", "wohnglueck"].map(
-            (logo) => (
-              <div
-                key={logo}
-                className="h-10 w-28 bg-neutral-100 border rounded-lg grid place-items-center text-xs text-neutral-500"
-              >
-                {logo}
+      {/* Hero-Viewport */}
+      <div className="min-h-[90vh] flex items-center justify-center px-4 pt-24">
+        <div className="max-w-3xl mx-auto text-center">
+
+         
+          {/* Titel + Subtitel in „Glass“-Card */}
+          <div className="mt-4 rounded-2xl bg-black/30 backdrop-blur-sm px-6 py-8 md:px-10 md:py-12 shadow-xl ring-1 ring-white/10">
+            <img
+          src={"/logo.jpg"}
+          alt=""
+          className="h-28 w-28 m-auto"
+          draggable={false}
+        />
+            <h1 className="text-white text-4xl md:text-6xl font-bold leading-tight">
+              {title}
+            </h1>
+            {subtitle && (
+              <p className="mt-4 text-white/90 text-lg md:text-2xl">
+                {subtitle}
+              </p>
+            )}
+
+            {/* CTAs */}
+            {(ctaPrimary || ctaSecondary) && (
+              <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
+                {ctaPrimary && (
+                  <Link
+                    href={ctaPrimary.href}
+                    className="inline-flex items-center justify-center rounded-xl bg-white text-black px-5 py-3 font-medium hover:bg-white/90 transition"
+                  >
+                    {ctaPrimary.label}
+                  </Link>
+                )}
+                {ctaSecondary && (
+                  <Link
+                    href={ctaSecondary.href}
+                    className="inline-flex items-center justify-center rounded-xl border border-white/30 bg-transparent px-5 py-3 font-medium text-white hover:bg-white/10 transition"
+                  >
+                    {ctaSecondary.label}
+                  </Link>
+                )}
               </div>
-            )
-          )}
+            )}
+          </div>
         </div>
+      </div>
+
+      {/* Folgecontent (scrollt über dem fixen Bild) */}
+      <div className="mx-auto max-w-4xl px-4 py-16 space-y-8">
+        {children}
       </div>
     </section>
   );
