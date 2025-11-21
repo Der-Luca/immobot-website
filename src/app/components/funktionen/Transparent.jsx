@@ -2,28 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-function PartnerRow() {
-  return (
-    <div className="mt-4 flex flex-wrap items-center gap-5 opacity-90">
-      <span className="inline-flex items-center gap-2 text-sm text-neutral-700">
-        <Image src="/logos/webflow.svg" alt="Webflow" width={18} height={18} />
-        Webflow
-      </span>
-      <span className="inline-flex items-center gap-2 text-sm text-neutral-700">
-        <Image src="/logos/relume.svg" alt="Relume" width={18} height={18} />
-        Relume
-      </span>
-      <span className="inline-flex items-center gap-2 text-sm text-neutral-700">
-        <Image src="/logos/webflow.svg" alt="Webflow" width={18} height={18} />
-        Webflow
-      </span>
-      <span className="inline-flex items-center gap-2 text-sm text-neutral-700">
-        <Image src="/logos/relume.svg" alt="Relume" width={18} height={18} />
-        Relume
-      </span>
-    </div>
-  );
-}
+
 
 export default function Transparent() {
   return (
@@ -39,7 +18,7 @@ export default function Transparent() {
               Wir glauben an Ehrlichkeit. Keine Werbung, keine versteckten
               Gebühren. Was du siehst, ist was du bekommst.
             </p>
-            <PartnerRow />
+     
 
             <div className="mt-6 flex gap-3">
               <Link
@@ -60,9 +39,9 @@ export default function Transparent() {
             </div>
           </div>
 
-          <div className="rounded-2xl bg-neutral-200/80 p-4 sm:p-6">
+          <div className="rounded-2xl  sm:p-6">
             <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl">
-              <Image src="/images/feature-transparent.jpg" alt="Transparent" fill className="object-cover" />
+              <Image src="/funktionenfotos/f4.jpg" alt="Transparent" fill className="object-cover" />
             </div>
           </div>
         </div>

@@ -15,8 +15,7 @@ export default function Header() {
       <div className="mx-auto max-w-7xl flex items-center justify-between px-4 h-16">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 text-blue-700 font-semibold text-lg">
-          {/* ... */}
-          <span>immobot.pro</span>
+         <img src="/logotext.png" alt="Immobotlogo" className="w-56" />
         </Link>
 
         {/* Desktop Navigation */}

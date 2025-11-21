@@ -9,21 +9,21 @@ const features = [
     title: "Über 40 Plattformen gebündelt",
     desc: "Wir durchsuchen die wichtigsten Immobilienportale automatisch und umfassend.",
     href: "/funktionen/portale",
-    img: "/ph-feature1.jpg",
+    img: "/homepagefotos/s4.jpg",
   },
   {
     tag: "Filter",
     title: "Individuelle Suchkriterien",
     desc: "Definiere einfach deine Wunschimmobilie mit präzisen Filtern.",
     href: "/funktionen/filter",
-    img: "/ph-feature2.jpg",
+    img: "/homepagefotos/s5.jpg",
   },
   {
     tag: "Updates",
     title: "Tägliche Aktualisierungen",
     desc: "Erhalte täglich neue Immobilienangebote ohne manuelle Suche.",
     href: "/funktionen/updates",
-    img: "/ph-feature3.jpg",
+    img: "/homepagefotos/s6.jpg",
   },
 ];
 

@@ -10,14 +10,14 @@ const steps = [
     title: "Suchprofil erstellen",
     desc: "Definiere deine Wunschimmobilie mit präzisen Suchkriterien",
     href: "/hilfe/suchprofil",
-    img: "/ph-step1.jpg", // Placeholder in /public
+    img: "/homepagefotos/s1.jpg", // Placeholder in /public
   },
   {
     tag: "",
     title: "Plattformen durchsuchen",
     desc: "Wir scannen automatisch 40+ Immobilienportale",
     href: "/hilfe/plattformen",
-    img: "/ph-step2.jpg",
+    img: "/homepagefotos/s2.jpg",
     tone: "blue",
   },
   {
@@ -25,7 +25,7 @@ const steps = [
     title: "Tägliche Ergebnisse",
     desc: "Erhalte passende Angebote direkt in deiner E-Mail",
     href: "/hilfe/ergebnisse",
-    img: "/ph-step3.jpg",
+    img: "/homepagefotos/s3.jpg",
     tone: "gray",
   },
 ];

@@ -1,18 +1,30 @@
 // src/app/ueber-uns/components/Hero.jsx
 export default function Hero() {
   return (
-    <section className="bg-neutral-50 py-24">
-      <div className="w-full mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+    <section
+      className="relative py-24"
+      style={{
+        backgroundImage: "url(/ueberunsfotos/ue0.jpg)",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      {/* dunkles Overlay für Lesbarkeit */}
+      <div className="absolute inset-0 bg-black/40" />
+
+      <div className="relative z-10 w-full mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
         {/* Textbereich */}
         <div>
-          <p className="text-sm font-medium text-neutral-800 mb-3">Mission</p>
+          <p className="text-sm font-medium text-neutral-100 mb-3">
+            Mission
+          </p>
 
-          <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6">
+          <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6 text-white">
             Über uns – <br /> digitale Immobiliensuche
           </h1>
 
-          <p className="text-neutral-700 text-lg mb-8">
-            Wir vereinfachen die Immobiliensuche mit intelligenter Technologie. 
+          <p className="text-neutral-100/90 text-lg mb-8">
+            Wir vereinfachen die Immobiliensuche mit intelligenter Technologie.
             Unsere Plattform bündelt Angebote aus über 40 Portalen.
           </p>
 
@@ -25,21 +37,15 @@ export default function Hero() {
             </a>
             <a
               href="/kontakt"
-              className="px-5 py-2.5 bg-neutral-100 text-black rounded-xl font-medium hover:bg-neutral-200 transition"
+              className="px-5 py-2.5 bg-white/90 text-black rounded-xl font-medium hover:bg-white transition"
             >
               Kontakt
             </a>
           </div>
         </div>
 
-        {/* Optionales Bild */}
-        <div className="flex justify-center md:justify-end">
-          <img
-            src="/about-hero.svg"
-            alt="Digitale Immobiliensuche"
-            className="w-full max-w-md"
-          />
-        </div>
+        {/* rechte Spalte nur als Spacer, falls du später was brauchst */}
+        <div className="hidden md:block" />
       </div>
     </section>
   );

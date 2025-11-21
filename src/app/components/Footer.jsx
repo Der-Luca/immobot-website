@@ -9,10 +9,7 @@ export default function Footer() {
         {/* Logo + Branding */}
         <div>
           <Link href="/" className="flex items-center gap-2 text-blue-700 font-semibold text-lg">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-6 w-6">
-              <path d="M12 3 3 10v10a1 1 0 0 0 1 1h5v-6h6v6h5a1 1 0 0 0 1-1V10l-9-7z" />
-            </svg>
-            <span>immobot.pro</span>
+              <img src="/logo.png" alt="Immobotlogo" className="w-1/2" />
           </Link>
         </div>
 

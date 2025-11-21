@@ -77,11 +77,11 @@ export default function Contact() {
           </div>
 
           {/* right column image / map placeholder */}
-          <div className="rounded-2xl bg-neutral-200/80 p-4 sm:p-6 lg:p-8">
+          <div className="rounded-2xl sm:p-6 lg:p-8">
             {/* Ersetze src durch dein echtes Bild oder eine Map */}
             <div className="relative aspect-[16/9] w-full overflow-hidden rounded-xl">
               <Image
-                src="/images/contact-office.jpg"   // <- anpassen
+                src="/ueberunsfotos/ue2.jpg"   // <- anpassen
                 alt="Unser Büro / Kontakt"
                 fill
                 className="object-cover"

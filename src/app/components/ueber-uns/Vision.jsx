@@ -1,4 +1,6 @@
+import Image from "next/image";
 export default function Vision() {
+
   return (
     <section className="py-24 bg-white">
       <div className="max-w-5xl mx-auto px-6 text-center">
@@ -43,21 +45,8 @@ export default function Vision() {
         </div>
 
         {/* Platzhalter-Bild */}
-        <div className="w-full aspect-video bg-neutral-100 rounded-2xl grid place-items-center text-neutral-400">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-12 w-12"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            strokeWidth={1.5}
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M3 16.5l5.5-6 4 4.5 4.5-5.5L21 16.5M3 7.5h18M3 21h18M3 3h18"
-            />
-          </svg>
+        <div className="w-full ">
+          <img src="/ueberunsfotos/ue1.jpg" className="rounded-xl" />
         </div>
       </div>
     </section>

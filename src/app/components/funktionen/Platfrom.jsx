@@ -6,7 +6,7 @@ export default function Platform({
   kicker = "Plattformen",
   title = <>Über 40<br />Immobilienportale in<br />einem Tool</>,
   desc = "Wir durchforsten täglich die besten Immobilienportale für dich. Keine manuelle Suche mehr – nur relevante Angebote.",
-  imageSrc = "/images/platforms.jpg", // ersetze durch dein Bild
+  imageSrc = "/funktionenfotos/f1.jpg", // ersetze durch dein Bild
   imageAlt = "Immobot Plattformen",
 }) {
   return (
@@ -41,7 +41,7 @@ export default function Platform({
           </div>
 
           {/* right image card */}
-          <div className="rounded-3xl bg-neutral-200/80 p-4 sm:p-6 lg:p-8">
+          <div className="rounded-3xl  p-4 sm:p-6 lg:p-8">
             <div className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl">
               <Image
                 src={imageSrc}

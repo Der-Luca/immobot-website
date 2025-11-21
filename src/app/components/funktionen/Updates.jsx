@@ -2,7 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-function PartnerRow() {
+/*function PartnerRow() {
   return (
     <div className="mt-4 flex flex-wrap items-center gap-5 opacity-90">
       <span className="inline-flex items-center gap-2 text-sm text-neutral-700">
@@ -23,7 +23,7 @@ function PartnerRow() {
       </span>
     </div>
   );
-}
+}*/
 
 export default function Updates() {
   return (
@@ -31,9 +31,9 @@ export default function Updates() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2">
           {/* Bild links */}
-          <div className="order-last rounded-2xl bg-sky-200/60 p-4 sm:p-6 lg:order-first">
+          <div className="order-last rounded-2xl sm:p-6 lg:order-first">
             <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl">
-              <Image src="/images/feature-updates.jpg" alt="Updates" fill className="object-cover" />
+              <Image src="/funktionenfotos/f3.jpg" alt="Updates" fill className="object-cover" />
             </div>
           </div>
 
@@ -48,7 +48,7 @@ export default function Updates() {
               Immobilienangebote direkt in dein Postfach – schnell, einfach,
               zuverlässig.
             </p>
-            <PartnerRow />
+           {/*<PartnerRow />*/ } 
 
             <div className="mt-6 flex gap-3">
               <Link
