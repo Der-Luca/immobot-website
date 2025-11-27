@@ -22,7 +22,7 @@ export default function Testimonials() {
   return (
     <section className="bg-neutral-50 py-20">
       <div className="max-w-6xl mx-auto px-6 text-center">
-        <h2 className="text-3xl md:text-4xl font-semibold mb-3">
+        <h2 className="mt-4 text-5xl font-semibold leading-[0.95] text-neutral-900 sm:text-6xl">
           Was unsere Nutzer sagen
         </h2>
         <p className="text-neutral-600 mb-12">

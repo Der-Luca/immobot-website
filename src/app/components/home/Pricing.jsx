@@ -24,7 +24,7 @@ export default function Pricing() {
     <section className="px-4 py-20 bg-white">
       <div className="mx-auto max-w-3xl text-center">
         <p className="text-sm font-semibold text-neutral-500">Preise</p>
-        <h2 className="text-3xl md:text-5xl font-bold mt-1">Flexibel und transparent</h2>
+        <h2 className="mt-4 text-5xl font-semibold leading-[0.95] text-neutral-900 sm:text-6xl">Flexibel und transparent</h2>
         <p className="mt-3 text-neutral-600">Finde dein passendes Immobilien-Find-Abo</p>
 
         {/* Toggle */}

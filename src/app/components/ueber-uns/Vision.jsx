@@ -6,7 +6,7 @@ export default function Vision() {
       <div className="max-w-5xl mx-auto px-6 text-center">
         {/* Überschrift */}
         <p className="text-sm font-medium text-neutral-800 mb-3">Vision</p>
-        <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
+        <h2 className="mt-4 text-5xl font-semibold leading-[0.95] text-neutral-900 sm:text-6xl">
           Zeit sparen und Immobilien finden,<br />
           die wirklich interessant sind.
         </h2>

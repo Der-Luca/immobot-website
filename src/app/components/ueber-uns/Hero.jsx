@@ -19,11 +19,11 @@ export default function Hero() {
             Mission
           </p>
 
-          <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6 text-white">
+          <h1 className="text-5xl font-semibold leading-[0.95] text-white sm:text-6xl md:text-7xl lg:text-8xl">
             Über uns – <br /> digitale Immobiliensuche
           </h1>
 
-          <p className="text-neutral-100/90 text-lg mb-8">
+          <p className="text-lg leading-8 mb-1 text-neutral-100 sm:text-xl">
             Wir vereinfachen die Immobiliensuche mit intelligenter Technologie.
             Unsere Plattform bündelt Angebote aus über 40 Portalen.
           </p>

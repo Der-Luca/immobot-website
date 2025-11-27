@@ -38,7 +38,7 @@ export default function History() {
       <div className="max-w-5xl mx-auto px-6">
         {/* Header */}
         <p className="text-sm font-medium text-neutral-800">Geschichte</p>
-        <h2 className="mt-2 text-4xl md:text-5xl font-bold leading-tight">
+        <h2 className="mt-4 text-5xl font-semibold leading-[0.95] text-neutral-900 sm:text-6xl">
           Unsere Reise und wichtige <br className="hidden md:block" />
           Meilensteine
         </h2>

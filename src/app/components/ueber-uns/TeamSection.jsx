@@ -59,7 +59,7 @@ export default function TeamSection() {
     <section className="bg-sky-50 py-16">
       <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
         <p className="text-sm font-medium text-slate-500">Team</p>
-        <h2 className="mt-2 text-3xl sm:text-4xl font-semibold tracking-tight text-slate-900">
+        <h2 className="mt-4 text-5xl font-semibold leading-[0.95] text-neutral-900 sm:text-6xl">
           Unser Team
         </h2>
         <p className="mt-3 max-w-2xl text-slate-600">

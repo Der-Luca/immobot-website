@@ -27,7 +27,7 @@ export default function Plan({
     <section className="bg-neutral-50 py-16">
       <div className="mx-auto max-w-3xl px-4 text-center">
         <p className="text-sm font-semibold text-neutral-700">{kicker}</p>
-        <h2 className="mt-2 text-4xl font-semibold tracking-tight text-neutral-900 sm:text-5xl">
+        <h2 className="mt-4 text-5xl font-semibold leading-[0.95] text-neutral-900 sm:text-6xl">
           {title}
         </h2>
         <p className="mt-2 text-neutral-600">{subtitle}</p>

@@ -11,7 +11,7 @@ export default function Transparent() {
         <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2">
           <div>
             <p className="text-sm font-semibold text-neutral-600">Transparent</p>
-            <h2 className="mt-2 text-3xl font-semibold text-neutral-900 sm:text-4xl">
+            <h2 className="mt-4 text-5xl font-semibold leading-[0.95] text-neutral-900 sm:text-6xl">
               Keine versteckten Kosten, keine Überraschungen
             </h2>
             <p className="mt-3 max-w-xl text-neutral-700">

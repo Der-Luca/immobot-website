@@ -32,7 +32,7 @@ export default function CoreFeatures() {
     <section className="px-4 py-20 bg-white">
       <div className="mx-auto max-w-7xl text-center">
         <p className="text-sm font-semibold text-neutral-500">Vorteile</p>
-        <h2 className="text-3xl md:text-5xl font-bold mt-1">Unsere Kernfunktionen</h2>
+        <h2 className="tmt-4 text-5xl font-semibold leading-[0.95] text-neutral-900 sm:text-6xl">Unsere Kernfunktionen</h2>
         <p className="mt-3 text-neutral-600 text-base md:text-lg">
           Intelligente Suche für deine Traumimmobilie
         </p>

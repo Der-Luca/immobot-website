@@ -53,13 +53,13 @@ export default function HeroFixedLayer({
           )}
 
           {/* Titel */}
-          <h1 className="mt-3 text-white text-4xl md:text-6xl font-bold leading-tight">
+          <h1 className="text-5xl font-semibold leading-[0.95] text-white sm:text-6xl md:text-7xl lg:text-8xl">
             {title}
           </h1>
 
           {/* Untertitel */}
           {subtitle && (
-            <p className="mt-4 text-white/90 text-lg md:text-2xl">
+            <p className="text-lg leading-8 text-neutral-100 sm:text-xl">
               {subtitle}
             </p>
           )}

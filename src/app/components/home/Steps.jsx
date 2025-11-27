@@ -35,7 +35,7 @@ export default function Steps() {
     <section className="px-4 py-16 md:py-20 bg-white">
       <div className="mx-auto max-w-7xl text-center">
         <p className="text-sm text-neutral-500">Einfach</p>
-        <h2 className="text-3xl md:text-5xl font-bold mt-1">So funktioniert immobot.pro</h2>
+        <h2 className="mt-4 text-5xl font-semibold leading-[0.95] text-neutral-900 sm:text-6xl">So funktioniert immobot.pro</h2>
         <p className="mt-3 text-neutral-600">Drei Schritte zu deiner perfekten Immobilie</p>
 
         <div className="mt-10 grid md:grid-cols-3 gap-6">

@@ -79,7 +79,7 @@ export default function Advantages({
         {/* Header */}
         <div className="text-center">
           <p className="text-sm font-semibold text-neutral-700">{kicker}</p>
-          <h2 className="mt-2 text-4xl font-semibold tracking-tight text-neutral-900 sm:text-5xl">
+          <h2 className="mt-4 text-5xl font-semibold leading-[0.95] text-neutral-900 sm:text-6xl">
             {title}
           </h2>
           <p className="mx-auto mt-3 max-w-2xl text-neutral-700">{subtitle}</p>

@@ -40,7 +40,7 @@ export default function Testimonials() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <div className="text-center">
-          <h2 className="text-4xl font-semibold tracking-tight text-neutral-900 sm:text-5xl">
+          <h2 className="mt-4 text-5xl font-semibold leading-[0.95] text-neutral-900 sm:text-6xl">
             Erfahrungen
           </h2>
           <p className="mt-2 text-sm text-neutral-600">

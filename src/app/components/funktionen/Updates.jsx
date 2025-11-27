@@ -2,28 +2,6 @@
 import Link from "next/link";
 import Image from "next/image";
 
-/*function PartnerRow() {
-  return (
-    <div className="mt-4 flex flex-wrap items-center gap-5 opacity-90">
-      <span className="inline-flex items-center gap-2 text-sm text-neutral-700">
-        <Image src="/logos/webflow.svg" alt="Webflow" width={18} height={18} />
-        Webflow
-      </span>
-      <span className="inline-flex items-center gap-2 text-sm text-neutral-700">
-        <Image src="/logos/relume.svg" alt="Relume" width={18} height={18} />
-        Relume
-      </span>
-      <span className="inline-flex items-center gap-2 text-sm text-neutral-700">
-        <Image src="/logos/webflow.svg" alt="Webflow" width={18} height={18} />
-        Webflow
-      </span>
-      <span className="inline-flex items-center gap-2 text-sm text-neutral-700">
-        <Image src="/logos/relume.svg" alt="Relume" width={18} height={18} />
-        Relume
-      </span>
-    </div>
-  );
-}*/
 
 export default function Updates() {
   return (
@@ -40,7 +18,7 @@ export default function Updates() {
           {/* Text rechts */}
           <div>
             <p className="text-sm font-semibold text-neutral-600">Zeit</p>
-            <h2 className="mt-2 text-3xl font-semibold text-neutral-900 sm:text-4xl">
+            <h2 className="mt-4 text-5xl font-semibold leading-[0.95] text-neutral-900 sm:text-6xl">
               Tägliche Updates ohne Aufwand
             </h2>
             <p className="mt-3 max-w-xl text-neutral-700">

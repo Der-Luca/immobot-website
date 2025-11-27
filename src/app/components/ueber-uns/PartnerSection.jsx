@@ -21,7 +21,7 @@ export default function PartnersSection() {
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:items-center">
           {/* Left: Copy + CTA */}
           <div>
-            <h2 className="text-4xl font-semibold tracking-tight text-neutral-900">
+            <h2 className="mt-4 text-5xl font-semibold leading-[0.95] text-neutral-900 sm:text-6xl">
               Unsere vertrauenswürdigen <br className="hidden sm:block" />
               Partner
             </h2>

@@ -38,7 +38,7 @@ export default function FAQ({
       <div className="mx-auto w-full max-w-4xl px-4 sm:px-6">
         {/* Header */}
         <div className="text-center">
-          <h2 className="text-4xl font-semibold tracking-tight text-neutral-900 sm:text-5xl">
+          <h2 className="tmt-4 text-5xl font-semibold leading-[0.95] text-neutral-900 sm:text-6xl">
             {title}
           </h2>
           <p className="mx-auto mt-3 max-w-2xl text-sm text-neutral-600">

@@ -31,7 +31,7 @@ export default function FAQ() {
   return (
     <section className="py-20 bg-white">
       <div className="max-w-3xl mx-auto px-6 text-center">
-        <h2 className="text-3xl md:text-4xl font-semibold mb-3">Fragen</h2>
+        <h2 className="mt-4 text-5xl font-semibold leading-[0.95] text-neutral-900 sm:text-6xl">Fragen</h2>
         <p className="text-neutral-600 mb-12">
           Häufig gestellte Fragen zu immobot.pro
         </p>
