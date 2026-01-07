@@ -23,20 +23,12 @@ export default function Platform({
 
             <div className="mt-8 flex flex-wrap gap-4">
               <Link
-                href="/features/platforms"
+                href="https://app.immobot.pro/register"
                 className="inline-flex items-center rounded-2xl bg-neutral-900 px-5 py-3 text-sm font-semibold text-white hover:bg-neutral-800"
               >
-                Details
+                Starten
               </Link>
-              <Link
-                href="/features"
-                className="inline-flex items-center gap-2 rounded-2xl px-5 py-3 text-sm font-semibold text-neutral-900 ring-1 ring-neutral-300 hover:bg-neutral-50"
-              >
-                Mehr
-                <svg width="16" height="16" viewBox="0 0 24 24" className="opacity-80">
-                  <path d="M8 5l7 7-7 7" fill="none" stroke="currentColor" strokeWidth="2" />
-                </svg>
-              </Link>
+             
             </div>
           </div>
 

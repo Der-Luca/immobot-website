@@ -9,8 +9,8 @@ export default function Hero({
     </>
   ),
   blurb = "Finde deine Traumimmobilie ohne versteckte Kosten. Wir machen die Suche einfach und direkt.",
-  primaryHref = "/app",
-  secondaryHref = "/pricing#details",
+  primaryHref = "https://app.immobot.pro/register",
+  secondaryHref = "/preise",
   primaryLabel = "Starten",
   secondaryLabel = "Details",
 }) {

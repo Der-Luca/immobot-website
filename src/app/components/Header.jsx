@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const APP_URL = "https://immobot-dc818.web.app";
+const APP_URL = "https://app.immobot.pro";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -41,7 +41,7 @@ export default function Header() {
             Anmelden
           </a>
           <a
-            href={APP_URL}
+            href={`${APP_URL}/register`}
             className="rounded-xl px-4 py-2 bg-blue-600 text-white hover:bg-blue-700 transition-colors"
           >
             Starten

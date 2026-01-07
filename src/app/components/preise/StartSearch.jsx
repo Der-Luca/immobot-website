@@ -10,8 +10,8 @@ export default function StartSearch({
     </>
   ),
   subtitle = "Entdecke die einfachste Art, deine perfekte Immobilie zu finden. Keine versteckten Kosten.",
-  primaryHref = "/app",
-  secondaryHref = "/features",
+  primaryHref = "https://app.immobot.pro/register",
+  secondaryHref = "/funktionen",
   primaryLabel = "Starten",
   secondaryLabel = "Mehr erfahren",
 }) {

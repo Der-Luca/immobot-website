@@ -30,20 +30,12 @@ export default function Updates() {
 
             <div className="mt-6 flex gap-3">
               <Link
-                href="/features/alerts"
+                href="https://app.immobot.pro/register"
                 className="inline-flex items-center rounded-xl bg-neutral-900 px-4 py-2 text-sm font-medium text-white hover:bg-neutral-800"
               >
-                Aktivieren
+                Starten
               </Link>
-              <Link
-                href="/features"
-                className="inline-flex items-center gap-2 rounded-xl px-4 py-2 text-sm font-medium text-neutral-900 ring-1 ring-neutral-300 hover:bg-neutral-50"
-              >
-                Mehr
-                <svg width="16" height="16" viewBox="0 0 24 24" className="opacity-80">
-                  <path d="M8 5l7 7-7 7" fill="none" stroke="currentColor" strokeWidth="2" />
-                </svg>
-              </Link>
+             
             </div>
           </div>
         </div>
