@@ -14,7 +14,7 @@ const steps = [
     isBlueBtn: true,
   },
   {
-    tag: "",
+    tag: "Schritt 2",
     title: "Plattformen durchsuchen",
     desc: "Wir scannen automatisch 40+ Immobilienportale",
     href: "/funktionen",
@@ -24,7 +24,7 @@ const steps = [
     isBlueBtn: true,
   },
   {
-    tag: "",
+    tag: "Schritt 3",
     title: "Tägliche Ergebnisse",
     desc: "Erhalte passende Angebote direkt in deiner E-Mail",
     href: "https://app.immobot.pro/register",
