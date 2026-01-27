@@ -7,22 +7,22 @@ const DEFAULT_ITEMS = [
     kicker: "Zeit",
     title: <>Zeitersparnis<br />garantiert</>,
     desc: "Spare Stunden bei der Suche durch automatisierte Immobilienrecherche",
-    href: "/features/automation",
-    image: "/images/adv-time.jpg",
+    href: "/funktionen",
+    image: "/preisefotos/p5.jpg",
   },
   {
     kicker: "Komfort",
     title: <>Bequeme<br />Immobiliensuche</>,
     desc: "Durchsuche Dutzende Portale mit einem einzigen Klick",
-    href: "/features/platforms",
-    image: "/images/adv-comfort.jpg",
+    href: "/funktionen",
+    image: "/preisefotos/p6.jpg",
   },
   {
     kicker: "Präzision",
     title: <>Personalisierte<br />Suchergebnisse</>,
     desc: "Finde genau die Immobilien, die zu deinen Kriterien passen",
-    href: "/features/filters",
-    image: "/images/adv-precision.jpg",
+    href: "/funktionen",
+    image: "/preisefotos/p7.jpg",
   },
 ];
 

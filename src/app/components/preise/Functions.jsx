@@ -7,22 +7,22 @@ const DEFAULT_ITEMS = [
     kicker: "Plattformen",
     title: <>Zugriff auf über<br />40 Immobilienportale</>,
     desc: "Lasse gleichzeitig die besten Immobilienplattformen ohne Zeitaufwand durchsuchen.",
-    href: "/features/platforms",
-    image: "/images/fn-platforms.jpg",
+    href: "/funktionen",
+    image: "/preisefotos/p2.jpg",
   },
   {
     kicker: "Profile",
     title: <>Dein Wunsch ist<br />unser Befehl</>,
     desc: "Definiere genau deine Wunschimmobilie mit präzisen Filtereinstellungen.",
-    href: "/features/filters",
-    image: "/images/fn-profile.jpg",
+    href: "/funktionen",
+    image: "/preisefotos/p3.jpg",
   },
   {
     kicker: "Updates",
     title: <>Tägliche E-Mail-<br />Benachrichtigungen</>,
     desc: "Erhalte die neuesten Immobilienangebote direkt in deinem Posteingang.",
-    href: "/features/alerts",
-    image: "/images/fn-updates.jpg",
+    href: "/funktionen",
+    image: "/preisefotos/p4.jpg",
   },
 ];
 
