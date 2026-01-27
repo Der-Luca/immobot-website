@@ -1,7 +1,8 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+import { useState, useEffect } from "react";
 
 const steps = [
   {
@@ -36,76 +37,67 @@ const steps = [
 ];
 
 const tickerItems = [
-  "Klassische Immobilienportale (Immoscout, Immonet, Immowelt...)",
-  "Bankenimmobilien (Sparkassen...)",
-  "Kleinanzeigen (eBay, nationale & regionale Portale...)",
-  "Zeitungen",
-  "Weitere Immobiliendienste & Immobilienanbieter",
+  "Klassische Immobilienportale",
+  "Immoscout, Immonet, Immowelt",
+  "Bankenimmobilien & Sparkassen",
+  "eBay Kleinanzeigen",
+  "Regionale Portale",
+  "Zeitungen & Anzeigenblätter",
+  "Weitere Immobiliendienste",
 ];
 
-// einzelner Track
-const TickerTrack = () => (
-  <div className="flex items-center shrink-0">
-    {tickerItems.map((item, index) => (
-      <div key={index} className="flex items-center">
-        <span className="text-2xl md:text-3xl font-bold text-blue-600 whitespace-nowrap">
-          {item}
-        </span>
-        <span className="mx-6 text-blue-300 text-2xl">•</span>
-      </div>
-    ))}
-  </div>
-);
-
 export default function Steps() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % tickerItems.length);
+    }, 2500);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section className="px-4 py-16 md:py-20 bg-white overflow-hidden">
-      <h2 className="mb-12 text-5xl font-semibold leading-[0.95] text-neutral-900 sm:text-6xl text-center">
+      <h2 className="mb-6 text-5xl font-semibold leading-[0.95] text-neutral-900 sm:text-6xl text-center">
         Über 40 Immobilienportale in einem Tool
       </h2>
 
-      {/* --- START ENDLOSE LAUFSCHRIFT --- */}
-      <div
-        className="w-full mb-16 relative overflow-hidden
-        [mask-image:linear-gradient(to_right,transparent,black_15%,black_85%,transparent)]"
-      >
-        <div className="relative flex w-max">
-          {/* Track A */}
-          <motion.div
-            className="flex"
-            initial={{ x: "0%" }}
-            animate={{ x: "-100%" }}
-            transition={{
-              repeat: Infinity,
-              repeatType: "loop",
-              ease: "linear",
-              duration: 160,
-            }}
-          >
-            <TickerTrack />
-            <TickerTrack />
-            <TickerTrack />
-          </motion.div>
+      {/* --- FLIP BOARD ANIMATION --- */}
+      <div className="w-full mb-16 flex flex-col items-center justify-center">
+        <div className="h-14 md:h-16 flex items-center justify-center" style={{ perspective: "500px" }}>
+          <AnimatePresence mode="wait">
+            <motion.span
+              key={currentIndex}
+              initial={{ rotateX: -90, opacity: 0 }}
+              animate={{ rotateX: 0, opacity: 1 }}
+              exit={{ rotateX: 90, opacity: 0 }}
+              transition={{
+                duration: 0.5,
+                ease: [0.4, 0, 0.2, 1],
+              }}
+              className="text-2xl md:text-4xl font-bold text-blue-600 block"
+            >
+              {tickerItems[currentIndex]}
+            </motion.span>
+          </AnimatePresence>
+        </div>
 
-          {/* Track B */}
-          <motion.div
-            className="flex absolute left-full top-0"
-            initial={{ x: "0%" }}
-            animate={{ x: "-100%" }}
-            transition={{
-              repeat: Infinity,
-              repeatType: "loop",
-              ease: "linear",
-              duration: 160,
-            }}
-          >
-            <TickerTrack />
-            <TickerTrack />
-            <TickerTrack />
-          </motion.div>
+        {/* Progress dots */}
+        <div className="flex gap-2 mt-4">
+          {tickerItems.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => setCurrentIndex(i)}
+              className={`h-2 rounded-full transition-all duration-300 ${
+                i === currentIndex
+                  ? "bg-blue-600 w-6"
+                  : "bg-blue-200 hover:bg-blue-300 w-2"
+              }`}
+            />
+          ))}
         </div>
       </div>
-      {/* --- ENDE LAUFSCHRIFT --- */}
+      {/* --- ENDE FLIP BOARD --- */}
 
       <div className="mx-auto max-w-7xl text-center">
         <p className="text-sm text-neutral-500">Einfach</p>

@@ -53,6 +53,7 @@ export default function Footer() {
           <p>© {new Date().getFullYear()} immobot.pro. Alle Rechte vorbehalten.</p>
 
           <div className="flex flex-wrap justify-center gap-4">
+            <Link href="/impressum" className="hover:text-black">Impressum</Link>
             <Link href="/datenschutz" className="hover:text-black">Datenschutz</Link>
             <Link href="/nutzungsbedingungen" className="hover:text-black">Nutzungsbedingungen</Link>
             <Link href="/cookies" className="hover:text-black">Cookie-Einstellungen</Link>
