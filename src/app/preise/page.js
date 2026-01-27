@@ -4,6 +4,7 @@ import Hero from "../components/preise/Hero";
 import Plan from "../components/preise/Plan";
 import StartSearch from "../components/preise/StartSearch";
 import Testimonials from "../components/preise/Testimonials";
+import FAQ from "../components/preise/FAQ";
 
 
 export default function PricePage() {
@@ -15,6 +16,7 @@ export default function PricePage() {
         <Advantages/>
         <StartSearch/>
         <Testimonials/>
+        <FAQ/>
     </section>
   );
 }
