@@ -36,7 +36,7 @@ export default function Hero() {
               Entdecken
             </a>
             <a
-              href="/kontakt"
+              href="/impressum"
               className="px-5 py-2.5 bg-white/90 text-black rounded-xl font-medium hover:bg-white transition"
             >
               Kontakt

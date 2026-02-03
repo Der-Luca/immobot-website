@@ -34,7 +34,7 @@ export default function FAQ({
   faqs = DEFAULT_FAQS,
   ctaTitle = "Noch Fragen?",
   ctaSubtitle = "Wir helfen dir gerne weiter.",
-  ctaHref = "/kontakt",
+  ctaHref = "/impressum",
   ctaLabel = "Kontakt",
 }) {
   return (
