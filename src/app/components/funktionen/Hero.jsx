@@ -37,7 +37,7 @@ export default function FunktionenHero() {
 
             <div className="mt-8 flex flex-wrap gap-4">
               <Link
-                href="/https://app.immobot.pro/register"
+                href="https://app.immobot.pro/register"
                 className="inline-flex items-center rounded-2xl bg-sky-600 px-5 py-3 text-sm font-semibold text-white hover:bg-sky-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-500"
               >
                 Starten

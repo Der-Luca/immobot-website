@@ -3,35 +3,39 @@ import Link from "next/link";
 
 const DEFAULT_FAQS = [
   {
-    q: "Question text goes here",
-    a: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.",
+    q: "Welche Portale sind enthalten?",
+    a: "Wir durchsuchen über 40 führende Immobilienportale wie ImmoScout24, ImmoWelt, eBay Kleinanzeigen und viele regionale Anbieter.",
   },
   {
-    q: "Question text goes here",
-    a: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.",
+    q: "Kann ich jederzeit kündigen?",
+    a: "Ja, du kannst dein Abonnement monatlich und ohne Zusatzkosten kündigen. Keine Vertragsbindung.",
   },
   {
-    q: "Question text goes here",
-    a: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.",
+    q: "Wie oft werden neue Ergebnisse gesendet?",
+    a: "Täglich erhältst du eine E-Mail mit den neuesten Immobilienangeboten, die deinem Suchprofil entsprechen.",
   },
   {
-    q: "Question text goes here",
-    a: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.",
+    q: "Wie funktioniert die Personalisierung?",
+    a: "Du definierst deine Suchkriterien wie Preis, Größe, Ort, usw — und wir senden dir passende Angebote.",
   },
   {
-    q: "Question text goes here",
-    a: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.",
+    q: "Sind die Ergebnisse kostenlos?",
+    a: "Die Nutzung unseres Tools kostet 14,99 € pro Monat. Die Immobilienangebote selbst sind kostenlos.",
+  },
+  {
+    q: "Warum können viele Filter zu schlechteren (weniger) Ergebnissen führen?",
+    a: "Die tägliche Trefferquote (Anzahl der Ergebnisse) hängt sehr stark an der Qualität des jeweiligen Angebots. Werden Angebote auf einem der bei uns angeschlossenen Portale unzureichend, z.B. mit fehlenden oder fehlerhaften Parametern eingestellt, können wir leider auch nur diese Parameter nutzen/abfragen. Je nach definierten Filtern kann dies zu weniger Treffern führen. Leider haben wir hierauf keinen Einfluss.",
   },
 ];
 
 export default function FAQ({
-  title = "FAQs",
-  subtitle = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+  title = "Fragen",
+  subtitle = "Häufig gestellte Fragen zu immobot.pro",
   faqs = DEFAULT_FAQS,
-  ctaTitle = "Still have questions?",
-  ctaSubtitle = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  ctaHref = "/contact",
-  ctaLabel = "Contact",
+  ctaTitle = "Noch Fragen?",
+  ctaSubtitle = "Wir helfen dir gerne weiter.",
+  ctaHref = "/kontakt",
+  ctaLabel = "Kontakt",
 }) {
   return (
     <section className="bg-neutral-50 py-16 sm:py-20">

@@ -12,7 +12,7 @@ export default function Hero() {
       {/* dunkles Overlay für Lesbarkeit */}
       <div className="absolute inset-0 bg-black/40" />
 
-      <div className="relative z-10 w-full mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
         {/* Textbereich */}
         <div>
           <p className="text-sm font-medium text-neutral-100 mb-3">

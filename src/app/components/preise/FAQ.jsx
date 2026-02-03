@@ -26,6 +26,11 @@ export default function FAQ() {
       answer:
         "Die Nutzung unseres Tools kostet 14,99 € pro Monat. Die Immobilienangebote selbst sind kostenlos.",
     },
+    {
+      question: "Warum können viele Filter zu schlechteren (weniger) Ergebnissen führen?",
+      answer:
+        "Die tägliche Trefferquote (Anzahl der Ergebnisse) hängt sehr stark an der Qualität des jeweiligen Angebots. Werden Angebote auf einem der bei uns angeschlossenen Portale unzureichend, z.B. mit fehlenden oder fehlerhaften Parametern eingestellt, können wir leider auch nur diese Parameter nutzen/abfragen. Je nach definierten Filtern kann dies zu weniger Treffern führen. Leider haben wir hierauf keinen Einfluss.",
+    },
   ];
 
   return (

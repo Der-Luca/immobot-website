@@ -10,7 +10,7 @@ export default function Platform({
   imageAlt = "Immobot Plattformen",
 }) {
   return (
-    <section className="bg-white py-16">
+    <section id="features" className="bg-white py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 items-start gap-10 lg:grid-cols-2">
           {/* left content */}

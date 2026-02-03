@@ -19,7 +19,6 @@ export default function Footer() {
           <ul className="space-y-2 text-sm text-neutral-700">
             <li><Link href="/funktionen" className="hover:text-black">Funktionen</Link></li>
             <li><Link href="/preise" className="hover:text-black">Preise</Link></li>
-            <li><Link href="/demo" className="hover:text-black">Demo</Link></li>
             <li><Link href="/ueber-uns" className="hover:text-black">Über uns</Link></li>
           </ul>
         </div>
@@ -37,7 +36,7 @@ export default function Footer() {
         <div>
           <h4 className="font-semibold mb-3">Support</h4>
           <ul className="space-y-2 text-sm text-neutral-700 mb-6">
-            <li><Link href="/faq" className="hover:text-black">FAQ</Link></li>
+            <li><Link href="/#faq" className="hover:text-black">FAQ</Link></li>
           </ul>
 
           
