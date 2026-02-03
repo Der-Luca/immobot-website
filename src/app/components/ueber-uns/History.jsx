@@ -3,32 +3,28 @@
 
 const milestones = [
   {
-    year: "2025",
-    title: "Start von immobot",
+    year: "Q4 2024",
+    title: "Start von Immobot",
     text:
-      "Wir starteten mit der Vision, die Immobiliensuche zu revolutionieren. Unser erstes Konzept entstand in einer kleinen Garage.",
-    ctas: [{ label: "Button", href: "/funktionen" }, { label: "Button", href: "/kontakt", arrow: true }],
+      "Wir starten mit einer ersten Vision, die Immobiliensuche entspannter und einfacher zu machen. Unser Konzept beginnt zu wachsen"
   },
   {
-    year: "2025",
-    title: "Erste Nutzer",
+    year: "Q1-Q2 2025",
+    title: "Erste Anläufe",
     text:
-      "Wir gewannen unsere ersten 100 Nutzer und sammelten wertvolles Feedback für unsere Plattform.",
-    ctas: [{ label: "Button", href: "/preise" }, { label: "Button", href: "/demo", arrow: true }],
+      "Wir entwickeln verschiedene Ansätze und Lösungen zur idealen Immobiliensuche und erstellen erste Programmierungen"
   },
   {
-    year: "2025",
-    title: "Erweiterung der Plattformen",
+    year: "Q3-Q4 2025",
+    title: "Systemumzug und Testphase",
     text:
-      "Unser Netzwerk wuchs auf über 40 Immobilienportale. Die Suche wurde noch einfacher und umfassender.",
-    ctas: [{ label: "Button", href: "/funktionen" }, { label: "Button", href: "/status", arrow: true }],
+      "Wir ziehen vom ersten System auf ein wesentlich charmanteres System mit deutlich mehr Möglichkeiten um und testen alle Prozesse mit ersten Testkunden, mit deren Feedback entwickeln wir kontinuierlich weiter. Unser Netzwerk wächst auf über 40 Immobilienportale."
   },
   {
-    year: "2026",
-    title: "Kontinuierliche Innovation",
+    year: "Q1 2026",
+    title: "Finalisierung und Go Live",
     text:
-      "Wir entwickeln unsere KI-Technologie weiter, um noch präzisere Suchergebnisse zu liefern.",
-    ctas: [{ label: "Button", href: "/blog" }, { label: "Button", href: "/kontakt", arrow: true }],
+      "Die Website erreicht ihren aktuellen Stand, die Plattform wird finalisiert. Start des Marketings"
   },
 ];
 
@@ -46,6 +42,15 @@ export default function History() {
           Die Geschichte von immobot.pro ist geprägt von Innovation und Leidenschaft
           für digitale Lösungen.
         </p>
+
+        {/* Bild */}
+        <div className="mt-8 rounded-2xl overflow-hidden">
+          <img
+            src="/ueber-uns/ue2.jpg"
+            alt="Immobot Geschichte"
+            className="w-full h-auto object-cover"
+          />
+        </div>
 
         {/* Timeline */}
         <div className="relative mt-12">

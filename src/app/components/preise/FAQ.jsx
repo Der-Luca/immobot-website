@@ -24,7 +24,7 @@ export default function FAQ() {
     {
       question: "Sind die Ergebnisse kostenlos?",
       answer:
-        "Die Nutzung unseres Tools kostet 12,99 € pro Monat. Die Immobilienangebote selbst sind kostenlos.",
+        "Die Nutzung unseres Tools kostet 14,99 € pro Monat. Die Immobilienangebote selbst sind kostenlos.",
     },
   ];
 

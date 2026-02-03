@@ -18,6 +18,7 @@ export default function Filters() {
               Definiere präzise Suchkriterien und erhalte nur Angebote, die exakt
               deinen Vorstellungen entsprechen. Kein Ballast, nur Treffer.
             </p>
+            
    
 
             <div className="mt-6 flex gap-3">

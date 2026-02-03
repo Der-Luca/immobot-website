@@ -1,5 +1,10 @@
 // components/TeamSection.jsx
 import Link from "next/link";
+import Image from "next/image";
+
+import christophImg from "@/app/ueberunsfotos/christoph.jpg";
+import lucaImg from "@/app/ueberunsfotos/luca.jpg";
+import dustinImg from "@/app/ueberunsfotos/dustin.jpg";
 
 /* ---- inline Icons ---- */
 const IconLinkedIn = (props) => (
@@ -21,30 +26,39 @@ const IconDribbble = (props) => (
 /* ---- dummy data ---- */
 const TEAM = [
   {
-    name: "Max Müller",
-    role: "Gründer und CEO",
-    bio: "Technologieexperte mit 15 Jahren Erfahrung in Immobilien und Softwareentwicklung.",
-    links: { linkedin: "#", x: "#", dribbble: "#" },
+    name: "Christoph Denlöffel",
+    role: "Gründer",
+    bio: "",
+    image: christophImg,
   },
   {
-    name: "Sarah Schmidt",
-    role: "Technische Leiterin",
-    bio: "Entwicklerin mit Fokus auf KI und maschinellem Lernen für präzise Immobiliensuchen.",
-    links: { linkedin: "#", x: "#", dribbble: "#" },
+    name: "Luca-Samuel Pleßing",
+    role: "Entwickler",
+    bio: "",
+    image: lucaImg,
   },
   {
-    name: "Thomas Weber",
-    role: "Produktmanager",
-    bio: "Treibt die Produktentwicklung und Nutzererfahrung von immobot.pro voran.",
-    links: { linkedin: "#", x: "#", dribbble: "#" },
-  },
-  { name: "Full name", role: "Job title", bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.", links: { linkedin: "#", x: "#", dribbble: "#" } },
-  { name: "Full name", role: "Job title", bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.", links: { linkedin: "#", x: "#", dribbble: "#" } },
-  { name: "Full name", role: "Job title", bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.", links: { linkedin: "#", x: "#", dribbble: "#" } },
-  { name: "Full name", role: "Job title", bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.", links: { linkedin: "#", x: "#", dribbble: "#" } },
+    name: "Dustin Jeff Vogler",
+    role: "Marketing",
+    bio: "",
+    image: dustinImg,
+  }
 ];
 
-function Avatar() {
+function Avatar({ image, name }) {
+  if (image) {
+    return (
+      <div className="h-20 w-20 rounded-full overflow-hidden ring-1 ring-black/5">
+        <Image
+          src={image}
+          alt={name}
+          width={80}
+          height={80}
+          className="h-full w-full object-cover"
+        />
+      </div>
+    );
+  }
   return (
     <div className="h-20 w-20 rounded-full bg-blue-100/80 flex items-center justify-center ring-1 ring-black/5">
       <svg width="28" height="28" viewBox="0 0 24 24" className="opacity-70">
@@ -73,7 +87,7 @@ export default function TeamSection() {
               key={i}
               className="rounded-2xl bg-white/60 p-6 ring-1 ring-black/5 backdrop-blur-sm"
             >
-              <Avatar />
+              <Avatar image={m.image} name={m.name} />
               <h3 className="mt-5 text-lg font-semibold text-slate-900">{m.name}</h3>
               <p className="text-sm text-slate-600">{m.role}</p>
               <p className="mt-3 text-sm leading-6 text-slate-700">{m.bio}</p>
@@ -109,20 +123,6 @@ export default function TeamSection() {
               </div>
             </article>
           ))}
-        </div>
-
-        {/* Hiring block */}
-        <div className="mt-14 rounded-2xl p-6 backdrop-blur-sm">
-          <h3 className="text-2xl font-semibold text-slate-900">Wir stellen ein</h3>
-          <p className="mt-2 max-w-2xl text-slate-700">
-            Verstärke unser Team und revolutioniere die Immobiliensuche mit uns.
-          </p>
-          <Link
-            href="/jobs"
-            className="mt-6 inline-flex items-center rounded-xl border border-slate-300 px-4 py-2 text-sm font-medium text-slate-900 hover:bg-slate-50"
-          >
-            Offene Stellen
-          </Link>
         </div>
       </div>
     </section>

@@ -27,7 +27,7 @@ export default function Pricing() {
 
             <div className="flex flex-col gap-4">
               <div className="flex items-baseline gap-2">
-                <span className="text-5xl font-bold tracking-tight">12,99 €</span>
+                <span className="text-5xl font-bold tracking-tight">14,99 €</span>
                 <span className="text-neutral-500">/ Monat</span>
               </div>
 

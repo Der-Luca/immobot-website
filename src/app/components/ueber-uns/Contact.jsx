@@ -41,7 +41,7 @@ export default function Contact() {
               <div>
                 <h3 className="text-lg font-semibold text-neutral-900">E-Mail</h3>
                 <p className="mt-1 text-neutral-600">Schreibe uns eine Nachricht</p>
-                <p className="mt-3 font-medium text-neutral-900">info@immobot.pro</p>
+                <p className="mt-3 font-medium text-neutral-900">cd@immobot.pro</p>
               </div>
             </div>
 
@@ -51,44 +51,14 @@ export default function Contact() {
               <div>
                 <h3 className="text-lg font-semibold text-neutral-900">Telefon</h3>
                 <p className="mt-1 text-neutral-600">Sprich direkt mit unserem Team</p>
-                <p className="mt-3 font-medium text-neutral-900">+49 30 901820</p>
+                <p className="mt-3 font-medium text-neutral-900">0156/78315679</p>
               </div>
             </div>
 
-            {/* Office */}
-            <div className="flex items-start gap-4">
-              <PinIcon className="mt-1 h-7 w-7 text-neutral-900" />
-              <div>
-                <h3 className="text-lg font-semibold text-neutral-900">Büro</h3>
-                <p className="mt-1 text-neutral-600">
-                  Besuche uns in unserem modernen Büro in Berlin
-                </p>
-                <Link
-                  href="/anfahrt"
-                  className="mt-4 inline-flex items-center gap-2 text-neutral-900 underline-offset-4 hover:underline"
-                >
-                  Anfahrt
-                  <svg width="16" height="16" viewBox="0 0 24 24" className="opacity-80">
-                    <path d="M8 5l7 7-7 7" fill="none" stroke="currentColor" strokeWidth="2"/>
-                  </svg>
-                </Link>
-              </div>
-            </div>
           </div>
 
           {/* right column image / map placeholder */}
           <div className="rounded-2xl sm:p-6 lg:p-8">
-            {/* Ersetze src durch dein echtes Bild oder eine Map */}
-            <div className="relative aspect-[16/9] w-full overflow-hidden rounded-xl">
-              <Image
-                src="/ueberunsfotos/ue2.jpg"   // <- anpassen
-                alt="Unser Büro / Kontakt"
-                fill
-                className="object-cover"
-                sizes="(max-width: 1024px) 100vw, 720px"
-                priority
-              />
-            </div>
           </div>
         </div>
       </div>

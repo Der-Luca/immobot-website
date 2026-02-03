@@ -5,7 +5,7 @@ export default function Plan({
   kicker = "Preise",
   title = "Unser Plan",
   subtitle = "Alle Immobilienangebote in einer einfachen Lösung",
-  checkoutHref = "/checkout",
+  checkoutHref = "https://app.immobot.pro/register",
 }) {
   return (
     <section className="bg-neutral-50 py-16">
@@ -28,7 +28,7 @@ export default function Plan({
           <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
             <div className="flex items-baseline gap-2">
               <span className="text-5xl font-semibold tracking-tight text-neutral-900 sm:text-6xl">
-                12,99 €
+                14,99 €
               </span>
               <span className="text-neutral-500">/ Monat</span>
             </div>

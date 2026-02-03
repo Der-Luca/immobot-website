@@ -4,7 +4,7 @@ export default function Hero() {
     <section
       className="relative py-24"
       style={{
-        backgroundImage: "url(/ueberunsfotos/ue0.jpg)",
+        backgroundImage: "url(/ueber-uns/ue0.jpg)",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
