@@ -74,7 +74,7 @@ export default function TeamSection() {
       <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
         <p className="text-sm font-medium text-slate-500">Team</p>
         <h2 className="mt-4 text-5xl font-semibold leading-[0.95] text-neutral-900 sm:text-6xl">
-          Unser Team
+          Das Team hinter Immobot
         </h2>
         <p className="mt-3 max-w-2xl text-slate-600">
           Leidenschaftliche Experten, die die Immobiliensuche neu definieren
