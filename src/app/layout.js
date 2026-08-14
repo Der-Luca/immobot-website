@@ -2,6 +2,7 @@
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import CookieConsentManager from "./components/CookieConsentManager";
 
 export const metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://immobot.pro"),
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+        <CookieConsentManager />
       </body>
     </html>
   );
