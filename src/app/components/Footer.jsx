@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
-import { Facebook, Instagram, Linkedin, Loader2, Mail, Youtube, X } from "lucide-react";
+import { Loader2, Mail, X } from "lucide-react";
 
 const CANCEL_ENDPOINT =
   "https://europe-west1-immobot-dc818.cloudfunctions.net/requestSubscriptionCancel";
@@ -128,6 +128,7 @@ export default function Footer() {
             <Link href="/cookies" className="hover:text-black">Cookie-Einstellungen</Link>
           </div>
 
+          {/* Social-Media-Links vorerst ausgeblendet.
           <div className="flex items-center gap-4">
             <Link href="https://facebook.com" aria-label="Facebook" className="hover:text-black"><Facebook size={18} /></Link>
             <Link href="https://instagram.com" aria-label="Instagram" className="hover:text-black"><Instagram size={18} /></Link>
@@ -135,6 +136,7 @@ export default function Footer() {
             <Link href="https://linkedin.com" aria-label="LinkedIn" className="hover:text-black"><Linkedin size={18} /></Link>
             <Link href="https://youtube.com" aria-label="YouTube" className="hover:text-black"><Youtube size={18} /></Link>
           </div>
+          */}
         </div>
       </div>
 
