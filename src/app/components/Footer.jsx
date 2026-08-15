@@ -95,7 +95,6 @@ export default function Footer() {
           <h4 className="font-semibold mb-3">Unternehmen</h4>
           <ul className="space-y-2 text-sm text-neutral-700">
             <li><Link href="/impressum" className="hover:text-black">Kontakt</Link></li>
-            <li><Link href="/rechtliches" className="hover:text-black">Rechtliches</Link></li>
           </ul>
         </div>
 
@@ -123,8 +122,9 @@ export default function Footer() {
 
           <div className="flex flex-wrap justify-center gap-4">
             <Link href="/impressum" className="hover:text-black">Impressum</Link>
-            <Link href="/datenschutz" className="hover:text-black">Datenschutz</Link>
-            <Link href="/nutzungsbedingungen" className="hover:text-black">Nutzungsbedingungen</Link>
+            <Link href="/datenschutz" className="hover:text-black">Datenschutzhinweis</Link>
+            <Link href="/nutzungsbedingungen" className="hover:text-black">AGB</Link>
+            <Link href="/widerruf" className="hover:text-black">Widerruf</Link>
             <Link href="/cookies" className="hover:text-black">Cookie-Einstellungen</Link>
           </div>
 
