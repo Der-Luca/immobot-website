@@ -26,11 +26,18 @@ export default function Plan({
           <hr className="my-6 border-neutral-200" />
 
           <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
-            <div className="flex items-baseline gap-2">
-              <span className="text-5xl font-semibold tracking-tight text-neutral-900 sm:text-6xl">
-                14,99 €
-              </span>
-              <span className="text-neutral-500">/ Monat</span>
+            <div>
+              <div className="flex flex-wrap items-end gap-x-2 gap-y-1">
+                <span className="text-5xl font-semibold tracking-tight text-neutral-900 sm:text-6xl">
+                  14,99 €
+                </span>
+                <span className="pb-1 text-sm font-semibold text-neutral-700">
+                  / Monat, inkl. USt.
+                </span>
+              </div>
+              <p className="mt-2 text-sm text-neutral-600">
+                Zahlungsarten: Kreditkarte, Apple Pay, Klarna, Amazon Pay, PayPal.
+              </p>
             </div>
 
             <Link
@@ -66,7 +73,7 @@ export default function Plan({
           </ul>
 
           <div className="mt-4 text-xs text-neutral-500">
-            Monatlich kündbar, inkl. MwSt.
+            Monatlich kündbar. Keine versteckten Gebühren.
           </div>
         </div>
       </div>

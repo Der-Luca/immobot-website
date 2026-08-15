@@ -26,16 +26,23 @@ export default function Pricing() {
             <hr className="my-5 border-neutral-200" />
 
             <div className="flex flex-col gap-4">
-              <div className="flex items-baseline gap-2">
-                <span className="text-5xl font-bold tracking-tight">14,99 €</span>
-                <span className="text-neutral-500">/ Monat</span>
+              <div>
+                <div className="flex flex-wrap items-end gap-x-2 gap-y-1">
+                  <span className="text-5xl font-bold tracking-tight">14,99 €</span>
+                  <span className="pb-1 text-sm font-semibold text-neutral-700">
+                    / Monat, inkl. USt.
+                  </span>
+                </div>
+                <p className="mt-2 text-sm text-neutral-600">
+                  Zahlungsarten: Kreditkarte, Apple Pay, Klarna, Amazon Pay, PayPal.
+                </p>
               </div>
 
               <button className="rounded-xl bg-blue-600 text-white px-5 py-3 font-medium hover:bg-blue-700 transition-colors">
                 Starten
               </button>
 
-              <p className="text-xs text-neutral-500">Monatlich kündbar, inkl. MwSt.</p>
+              <p className="text-xs text-neutral-500">Monatlich kündbar. Keine versteckten Gebühren.</p>
 
               <hr className="my-4 border-neutral-200" />
 
