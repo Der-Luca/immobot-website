@@ -1,0 +1,14 @@
+{
+  "/favicon.ico/route": "/favicon.ico",
+  "/_not-found/page": "/_not-found",
+  "/blog/page": "/blog",
+  "/kontakt/page": "/kontakt",
+  "/page": "/",
+  "/preise/page": "/preise",
+  "/ueber-uns/page": "/ueber-uns",
+  "/funktionen/page": "/funktionen",
+  "/cookies/page": "/cookies",
+  "/kuendigung/page": "/kuendigung",
+  "/datenschutz/page": "/datenschutz",
+  "/impressum/page": "/impressum"
+}
