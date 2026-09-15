@@ -51,4 +51,3 @@ jobs:
             -o BatchMode=yes \
             -o IdentitiesOnly=yes \
             luca@152.53.140.47
-
