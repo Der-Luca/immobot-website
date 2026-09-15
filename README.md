@@ -1,37 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Immobot Marketing-Website
 
-## Getting Started
+Statische Next.js-Website für `immobot.pro`. Änderungen an `main` werden automatisch
+gebaut und auf den Christoph-Server ausgerollt.
 
-First, run the development server:
+## Lokale Entwicklung
 
 ```bash
+npm ci
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Danach ist die Vorschau unter [http://localhost:3000](http://localhost:3000)
+erreichbar. Die Seiten liegen unter `src/app/`.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Produktions-Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
+Next.js erzeugt den statischen Export im Ordner `out/`.
 
-To learn more about Next.js, take a look at the following resources:
+## Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Der Workflow `.github/workflows/deploy.yml` läuft bei jedem Push auf `main` und kann
+zusätzlich in GitHub unter **Actions → Deploy website → Run workflow** manuell
+gestartet werden. Er installiert die festgeschriebenen Abhängigkeiten, baut die
+Website und überträgt nur einen erfolgreichen Build.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Auf dem Server läuft die Website als Nginx-Container unter
+`/srv/immobot/services/website`. Jede Version wird atomar aktiviert; die fünf
+neuesten Versionen bleiben für einen schnellen Rollback erhalten. Der
+Repository-Secret `DEPLOY_SSH_KEY` enthält einen eigenen privaten Schlüssel, dessen
+Gegenstück auf dem Server ausschließlich das Deployment-Skript ausführen darf.
 
-## Deploy on Vercel
+Bis zur DNS-Umstellung ist die Website unter `http://152.53.140.47` erreichbar.
+Beim Domainwechsel wird nur die Adresse in der Caddy-Konfiguration auf
+`immobot.pro, www.immobot.pro` geändert und Caddy neu geladen. Die Pipeline bleibt
+unverändert.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Manueller Rollback
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# immobot-website
+Auf dem Server zeigt `current` auf die aktive Version. Für einen Rollback wird der
+Link auf eine ältere Version unter `releases/` umgestellt:
+
+```bash
+cd /srv/immobot/services/website
+ln -sfn releases/<VERSION> current
+```

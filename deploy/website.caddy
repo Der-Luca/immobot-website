@@ -1,0 +1,10 @@
+# Temporary address until the immobot.pro DNS records are switched.
+http://152.53.140.47 {
+	reverse_proxy immobot-website:80
+}
+
+# Later replace the address above with:
+# immobot.pro, www.immobot.pro {
+# 	reverse_proxy immobot-website:80
+# }
+
